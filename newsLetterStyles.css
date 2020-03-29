@@ -1,0 +1,100 @@
+body, html{
+    margin:0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    height:100%;
+    width:100%;
+}
+.top-section{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 20%;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+}
+.container h1{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.container a{
+    color:#fff;
+    background:#3498db;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 20px;
+}
+p{
+    font-size: 16px;
+    padding:10px;
+    line-height: 24px;
+    margin:40px auto;
+    max-width: 500px;
+    text-transform: capitalize;
+    color:#34495e;
+}
+.email{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
+.email i{
+    background-color: #34495e;
+    color:#ffffff;
+    width:40px;
+    line-height: 40px;
+}
+.email-input, .btn{
+    border: none;
+    outline: none;
+}
+.email-input{
+    font-size: 15px;
+    width:0px;
+    transition: 0.75s;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: #34495e;
+    padding: 0 10px;
+    text-transform: uppercase;
+    color:#ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.email:hover >.email-input, .email-input:focus{
+    padding: 0 10px;
+    width:250px;
+
+}
+@keyframes slide{
+    0%{
+        background-image: url(img3.jpg);
+    }
+    33%{
+        background-image: url(img2.jpg);
+    }
+    67%{
+        background-image: url(img1.jpg);
+    }
+}
+
+.hit-counter{
+    height: 25px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
